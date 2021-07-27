@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jpR-5I-h0w">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,182 +14,668 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 14" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-Lb-Kau">
-                                <rect key="frame" x="87" y="276" width="240" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf4-uE-1cB">
-                                <rect key="frame" x="80" y="605" width="255" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf4-uE-1cB">
+                                <rect key="frame" x="50" y="618" width="290" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="YyI-7P-HK7"/>
+                                </constraints>
                                 <string key="text">Você sabe com o que uma gota de chuva trabalha? Se não sabe, é um bom dia para descobrir e ajudar a gotinha a encontrar o que ela gosta de fazer.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="Letras"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-Ho-bpz">
-                                <rect key="frame" x="316" y="811" width="75" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-Ho-bpz">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Du3-5q-sHZ" kind="presentation" id="QEi-Km-Yzf"/>
+                                    <segue destination="Du3-5q-sHZ" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="Wht-xJ-sid"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-Lb-Kau">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="hr6-Ho-bpz" firstAttribute="trailing" secondItem="Sf4-uE-1cB" secondAttribute="trailing" id="br9-tt-Ukz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sf4-uE-1cB" secondAttribute="trailing" constant="50" id="eIt-cU-rzf"/>
+                            <constraint firstAttribute="bottom" secondItem="Sf4-uE-1cB" secondAttribute="bottom" constant="94" id="n6T-BW-XFy"/>
+                            <constraint firstItem="Sf4-uE-1cB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qqk-qN-xjF"/>
+                            <constraint firstItem="hr6-Ho-bpz" firstAttribute="top" secondItem="Sf4-uE-1cB" secondAttribute="bottom" constant="27" id="uw9-2R-85b"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Xy2-7q-Vdb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+            <point key="canvasLocation" x="1366.1538461538462" y="86.729857819905206"/>
         </scene>
         <!--Gota View Controller-->
         <scene sceneID="ngv-Lu-qy2">
             <objects>
                 <viewController id="Du3-5q-sHZ" customClass="GotaViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TVJ-a3-WBh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 14" translatesAutoresizingMaskIntoConstraints="NO" id="Tny-m8-NrJ">
-                                <rect key="frame" x="87" y="233" width="240" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="4Ux-tr-jqM">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2a-t6-q3j">
-                                <rect key="frame" x="87" y="534" width="255" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Você sabe com o que uma gota de chuva trabalha? Se não sabe, é um bom dia para descobrir e ajudar a gotinha a encontrar o que ela gosta de fazer.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Para que área a gotinha deve ir?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="311" translatesAutoresizingMaskIntoConstraints="NO" id="q2a-t6-q3j">
+                                <rect key="frame" x="50" y="618" width="311" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="AW8-nn-hO5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNe-d6-cIf">
-                                <rect key="frame" x="105" y="714" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-h2-0l1">
+                                <rect key="frame" x="232" y="649" width="96" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Urbano">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="RuralButton:" destination="Du3-5q-sHZ" eventType="touchUpInside" id="3JF-kW-MoK"/>
+                                    <segue destination="S00-h5-H2f" kind="presentation" modalPresentationStyle="fullScreen" id="0eZ-Pg-YaS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-h2-0l1">
-                                <rect key="frame" x="281" y="714" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="MEV-ce-C5F" kind="show" id="lhn-XN-yra"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-1c-upD">
-                                <rect key="frame" x="319" y="772" width="75" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRN-d3-lUR">
-                                <rect key="frame" x="105" y="714" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRN-d3-lUR">
+                                <rect key="frame" x="57" y="649" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Q0-mF-87a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Rural">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="RuralButton:" destination="Du3-5q-sHZ" eventType="touchUpInside" id="fNQ-2F-whp"/>
-                                    <segue destination="Y7H-Ja-xFc" kind="show" id="afZ-ZA-FG4"/>
+                                    <segue destination="Y7H-Ja-xFc" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="afZ-ZA-FG4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TAn-CI-Qhk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="q2a-t6-q3j" firstAttribute="leading" secondItem="bRN-d3-lUR" secondAttribute="leading" id="Kfy-Kf-bGd"/>
+                            <constraint firstItem="bRN-d3-lUR" firstAttribute="centerY" secondItem="G5e-h2-0l1" secondAttribute="centerY" id="Pfz-Gq-OZq"/>
+                            <constraint firstItem="G5e-h2-0l1" firstAttribute="leading" secondItem="bRN-d3-lUR" secondAttribute="trailing" constant="75" id="eeC-cr-1qS"/>
+                            <constraint firstItem="bRN-d3-lUR" firstAttribute="leading" secondItem="TAn-CI-Qhk" secondAttribute="leading" constant="57" id="fej-Eb-Z9J"/>
+                            <constraint firstItem="TAn-CI-Qhk" firstAttribute="bottom" secondItem="bRN-d3-lUR" secondAttribute="bottom" constant="121" id="m0Y-7x-Kpd"/>
+                            <constraint firstItem="G5e-h2-0l1" firstAttribute="top" secondItem="q2a-t6-q3j" secondAttribute="bottom" constant="20" id="xxA-8a-M1I"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Osj-2Y-CD3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3e-2M-UFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="88"/>
+            <point key="canvasLocation" x="2500" y="87.440758293838854"/>
         </scene>
         <!--Rural View Controller-->
         <scene sceneID="P3H-Ay-K3q">
             <objects>
                 <viewController id="Y7H-Ja-xFc" customClass="RuralViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1i5-se-ijU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 16" translatesAutoresizingMaskIntoConstraints="NO" id="VwG-bj-vCv">
-                                <rect key="frame" x="105" y="318" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daqui de cima dá pra ver uma plantação e um tanque " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1e-nv-vCV">
+                                <rect key="frame" x="50" y="618" width="311" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1e-nv-vCV">
-                                <rect key="frame" x="83" y="557" width="284" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Agotinha penetra no solo e ajuda no desenvolvimento das plantas. Depois de ajudar elas, a gota pode voltar a nuvem por um transporte chamado evapotranspiração  </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Letras"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYi-5i-A47">
-                                <rect key="frame" x="319" y="761" width="75" height="22"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="ULb-l9-R5E">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-vO-Za4">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2oZ-qf-DEn" kind="presentation" modalPresentationStyle="fullScreen" id="2al-DZ-rpQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYi-5i-A47">
+                                <rect key="frame" x="229" y="551" width="75" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system">
+                                    <color key="titleColor" systemColor="systemGray3Color"/>
+                                </state>
                                 <connections>
                                     <action selector="RuralButton:" destination="Y7H-Ja-xFc" eventType="touchUpInside" id="SbL-cS-YVY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sr0-Zc-BVB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <color key="tintColor" name="Fundo"/>
                     </view>
                     <navigationItem key="navigationItem" id="lwX-C8-cJm"/>
                     <connections>
-                        <outlet property="GotaImage" destination="VwG-bj-vCv" id="XBd-ni-Dem"/>
+                        <outlet property="GotaVerdeImage" destination="ULb-l9-R5E" id="dMo-He-Z5K"/>
                         <outlet property="RuralLAbel" destination="Q1e-nv-vCV" id="mxb-Cj-ipe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8f9-U9-pq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="101.78571428571428"/>
+            <point key="canvasLocation" x="3780" y="86.729857819905206"/>
         </scene>
-        <!--Urbana View Controller-->
-        <scene sceneID="IxB-ao-F5c">
+        <!--PerguntaPT View Controller-->
+        <scene sceneID="5zA-Qu-K0R">
             <objects>
-                <viewController id="MEV-ce-C5F" customClass="UrbanaViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y7c-y6-H6M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="2oZ-qf-DEn" customClass="PerguntaPTViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PKi-kd-AqB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 17" translatesAutoresizingMaskIntoConstraints="NO" id="GbP-y8-KaV">
-                                <rect key="frame" x="70" y="287" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="Ifg-86-S1t">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4M-xj-1YV">
-                                <rect key="frame" x="70" y="534" width="284" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Agotinha penetra no solo e ajuda no desenvolvimento das plantas. Depois de ajudar elas, a gota pode voltar a nuvem por um transporte chamado evapotranspiração  </string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Para onde devo ir?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="311" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-cb-YPk">
+                                <rect key="frame" x="50" y="618" width="311" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Wvj-4r-moK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRe-My-M23">
-                                <rect key="frame" x="319" y="764" width="75" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrowshape.turn.up.right" catalog="system"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrN-7h-eji">
+                                <rect key="frame" x="232" y="649" width="96" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Tanque">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xam-Aa-tHn" kind="presentation" modalPresentationStyle="fullScreen" id="8AD-lA-uRI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uv-Ag-oNj">
+                                <rect key="frame" x="50" y="649" width="118" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DW4-L5-iaf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Plantação">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="RuralButton:" destination="2oZ-qf-DEn" eventType="touchUpInside" id="JLA-6l-EIH"/>
+                                    <segue destination="zVt-Wx-wWX" kind="presentation" modalPresentationStyle="fullScreen" id="swI-JC-S0Z"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="BrM-4s-M6w"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="Arr-3Q-xCa"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="Qgs-cb-YPk" firstAttribute="leading" secondItem="4uv-Ag-oNj" secondAttribute="leading" id="3Bv-zh-lIX"/>
+                            <constraint firstItem="4uv-Ag-oNj" firstAttribute="centerY" secondItem="QrN-7h-eji" secondAttribute="centerY" id="3Hi-1T-l8s"/>
+                            <constraint firstItem="QrN-7h-eji" firstAttribute="top" secondItem="Qgs-cb-YPk" secondAttribute="bottom" constant="20" id="GL8-Xx-dpw"/>
+                            <constraint firstItem="Arr-3Q-xCa" firstAttribute="bottom" secondItem="4uv-Ag-oNj" secondAttribute="bottom" constant="121" id="WmQ-gz-3E9"/>
+                            <constraint firstItem="4uv-Ag-oNj" firstAttribute="leading" secondItem="Arr-3Q-xCa" secondAttribute="leading" constant="57" id="cuh-C4-CRn"/>
+                            <constraint firstItem="QrN-7h-eji" firstAttribute="leading" secondItem="4uv-Ag-oNj" secondAttribute="trailing" constant="75" id="iDw-2B-HOy"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1gq-c2-nVl"/>
+                    <navigationItem key="navigationItem" id="4o7-Tm-sdR"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y3P-5r-2r8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb6-XD-XxF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="886"/>
+            <point key="canvasLocation" x="4660" y="86.729857819905206"/>
+        </scene>
+        <!--Plantacao View Controller-->
+        <scene sceneID="e5D-iW-DZ5">
+            <objects>
+                <viewController id="zVt-Wx-wWX" customClass="PlantacaoViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efb-0a-MbS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBi-SB-zHh">
+                                <rect key="frame" x="50" y="618" width="290" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="wuV-gc-hfE"/>
+                                </constraints>
+                                <string key="text">A gotinha penetra no solo e ajuda no desenvolvimento das plantas. Depois de ajudar elas, a gota pode voltar a nuvem por um transporte chamado evapotranspiração  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="Letras"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz0-2Y-bDY">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
+                                <connections>
+                                    <action selector="ProximoButton:" destination="zVt-Wx-wWX" eventType="touchUpInside" id="huj-Sw-jvv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaV" translatesAutoresizingMaskIntoConstraints="NO" id="Lcf-MJ-j8J">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fw8-8n-p7c"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mBi-SB-zHh" secondAttribute="bottom" constant="94" id="969-kL-KcV"/>
+                            <constraint firstItem="Dz0-2Y-bDY" firstAttribute="trailing" secondItem="mBi-SB-zHh" secondAttribute="trailing" id="Jvu-g2-CvC"/>
+                            <constraint firstItem="Dz0-2Y-bDY" firstAttribute="top" secondItem="mBi-SB-zHh" secondAttribute="bottom" constant="27" id="WTH-N4-Fbd"/>
+                            <constraint firstItem="fw8-8n-p7c" firstAttribute="trailing" secondItem="mBi-SB-zHh" secondAttribute="trailing" constant="50" id="cNa-il-aqI"/>
+                            <constraint firstItem="mBi-SB-zHh" firstAttribute="leading" secondItem="fw8-8n-p7c" secondAttribute="leading" constant="50" id="f7G-ID-g5M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f3C-Eg-OLp"/>
+                    <connections>
+                        <outlet property="PlantLabel" destination="mBi-SB-zHh" id="HSH-kv-0pu"/>
+                        <outlet property="PlantacaoLabel" destination="mBi-SB-zHh" id="Lq3-0E-5DX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAt-ft-UYe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6296.9230769230771" y="86.729857819905206"/>
+        </scene>
+        <!--Tanque View Controller-->
+        <scene sceneID="vY4-Bm-CLZ">
+            <objects>
+                <viewController id="xam-Aa-tHn" customClass="TanqueViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5kN-03-7MA">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opa. Ela chegou no tanque. E parece que ela será usada para regar outras plantinhas." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIe-2L-Lk9">
+                                <rect key="frame" x="50" y="618" width="290" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="sSb-wK-kS4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="Letras"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4L-bs-yIR">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
+                                <connections>
+                                    <action selector="TanqueButton:" destination="xam-Aa-tHn" eventType="touchUpInside" id="U79-2d-88F"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaV" translatesAutoresizingMaskIntoConstraints="NO" id="HPl-vC-5BS">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YHM-vR-tge"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="NIe-2L-Lk9" firstAttribute="leading" secondItem="YHM-vR-tge" secondAttribute="leading" constant="50" id="IRJ-aF-ySu"/>
+                            <constraint firstItem="YHM-vR-tge" firstAttribute="trailing" secondItem="NIe-2L-Lk9" secondAttribute="trailing" constant="50" id="axb-TP-NuR"/>
+                            <constraint firstItem="X4L-bs-yIR" firstAttribute="top" secondItem="NIe-2L-Lk9" secondAttribute="bottom" constant="27" id="jsP-jM-3so"/>
+                            <constraint firstAttribute="bottom" secondItem="NIe-2L-Lk9" secondAttribute="bottom" constant="94" id="o2G-l9-fcC"/>
+                            <constraint firstItem="X4L-bs-yIR" firstAttribute="trailing" secondItem="NIe-2L-Lk9" secondAttribute="trailing" id="vsW-Lg-nvg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JYu-MG-zP2"/>
+                    <connections>
+                        <outlet property="TanqueLabel" destination="NIe-2L-Lk9" id="WcL-qn-ORm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36p-kp-M91" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5368" y="807"/>
+        </scene>
+        <!--Urbana View Controller-->
+        <scene sceneID="Et8-Th-b1s">
+            <objects>
+                <viewController id="S00-h5-H2f" customClass="UrbanaViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lGL-6O-44A">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wee. A gotinha consegue ver lá de cima um balde e um bueiro. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJr-xM-Imy">
+                                <rect key="frame" x="50" y="618" width="290" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="39x-Q8-D5A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="Letras"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aU5-LJ-dOH">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EPl-KP-bjz" kind="presentation" modalPresentationStyle="fullScreen" id="kwX-xR-BeF"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="KDE-Kr-VXF">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qeK-dz-1vE"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="aU5-LJ-dOH" firstAttribute="top" secondItem="GJr-xM-Imy" secondAttribute="bottom" constant="27" id="7CS-1A-ulS"/>
+                            <constraint firstItem="qeK-dz-1vE" firstAttribute="trailing" secondItem="GJr-xM-Imy" secondAttribute="trailing" constant="50" id="Jem-jS-H5x"/>
+                            <constraint firstItem="GJr-xM-Imy" firstAttribute="leading" secondItem="qeK-dz-1vE" secondAttribute="leading" constant="50" id="X7K-fi-EDv"/>
+                            <constraint firstAttribute="bottom" secondItem="GJr-xM-Imy" secondAttribute="bottom" constant="94" id="geh-qA-zmJ"/>
+                            <constraint firstItem="aU5-LJ-dOH" firstAttribute="trailing" secondItem="GJr-xM-Imy" secondAttribute="trailing" id="n3g-mX-sCu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ktb-TN-yvH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb4-wo-laJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="1280"/>
+        </scene>
+        <!--PerguntaBB View Controller-->
+        <scene sceneID="oWO-sg-eAt">
+            <objects>
+                <viewController id="EPl-KP-bjz" customClass="PerguntaBBViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TrC-rQ-CTC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="Ma6-y7-jU1">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Para onde devo ir? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="311" translatesAutoresizingMaskIntoConstraints="NO" id="Zve-A6-8Zh">
+                                <rect key="frame" x="50" y="618" width="311" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Lbs-V5-LU8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBg-bq-qa2">
+                                <rect key="frame" x="232" y="649" width="89" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Bueiro">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="50q-mn-Gfk" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="57A-Oc-Uwg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yek-DO-xNC">
+                                <rect key="frame" x="57" y="649" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5GD-Fp-Wfr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="Balde">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="RuralButton:" destination="EPl-KP-bjz" eventType="touchUpInside" id="ZfC-1F-e3U"/>
+                                    <segue destination="Jkn-7x-a9H" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="nWR-BX-Bqv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B4L-pw-IEJ"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="yek-DO-xNC" firstAttribute="leading" secondItem="B4L-pw-IEJ" secondAttribute="leading" constant="57" id="7P0-pj-uf5"/>
+                            <constraint firstItem="JBg-bq-qa2" firstAttribute="leading" secondItem="yek-DO-xNC" secondAttribute="trailing" constant="75" id="Lp0-DF-liV"/>
+                            <constraint firstItem="JBg-bq-qa2" firstAttribute="top" secondItem="Zve-A6-8Zh" secondAttribute="bottom" constant="20" id="NPu-67-sBn"/>
+                            <constraint firstItem="Zve-A6-8Zh" firstAttribute="leading" secondItem="yek-DO-xNC" secondAttribute="leading" id="m93-cz-cFL"/>
+                            <constraint firstItem="yek-DO-xNC" firstAttribute="centerY" secondItem="JBg-bq-qa2" secondAttribute="centerY" id="o3W-XV-z9v"/>
+                            <constraint firstItem="B4L-pw-IEJ" firstAttribute="bottom" secondItem="yek-DO-xNC" secondAttribute="bottom" constant="121" id="o7x-7l-WIR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UVS-0q-VCR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m47-2E-x7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="1280"/>
+        </scene>
+        <!--Balde View Controller-->
+        <scene sceneID="fAh-w1-NIH">
+            <objects>
+                <viewController id="Jkn-7x-a9H" customClass="BaldeViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xbz-Vr-nVN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poch. Os humanos guardam cada gotinha para usar depois. Nesse balde já tem outras gotinhas." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbS-dW-kmH">
+                                <rect key="frame" x="50" y="618" width="290" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="yZg-8T-Lua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="Letras"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6F-FM-PI5">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
+                                <connections>
+                                    <action selector="BaldeButton:" destination="Jkn-7x-a9H" eventType="touchUpInside" id="aRu-YF-9iu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaA" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-qi-wFS">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zdM-MH-9eO"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstItem="u6F-FM-PI5" firstAttribute="trailing" secondItem="FbS-dW-kmH" secondAttribute="trailing" id="Cub-eB-cjZ"/>
+                            <constraint firstAttribute="bottom" secondItem="FbS-dW-kmH" secondAttribute="bottom" constant="94" id="Rp9-oe-Ra4"/>
+                            <constraint firstItem="u6F-FM-PI5" firstAttribute="top" secondItem="FbS-dW-kmH" secondAttribute="bottom" constant="27" id="YR1-8y-pit"/>
+                            <constraint firstItem="FbS-dW-kmH" firstAttribute="leading" secondItem="zdM-MH-9eO" secondAttribute="leading" constant="50" id="dvz-aX-Dte"/>
+                            <constraint firstItem="zdM-MH-9eO" firstAttribute="trailing" secondItem="FbS-dW-kmH" secondAttribute="trailing" constant="50" id="k59-eJ-Wwk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pNM-KP-5rQ"/>
+                    <connections>
+                        <outlet property="BaldeLabbel" destination="FbS-dW-kmH" id="EWn-N7-4Ow"/>
+                        <outlet property="GotaBaldeImage" destination="sBR-qi-wFS" id="TKS-eC-soB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0k-aD-8qe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3731" y="968"/>
+        </scene>
+        <!--Bueiro View Controller-->
+        <scene sceneID="reS-B8-fPC">
+            <objects>
+                <viewController id="50q-mn-Gfk" customClass="BueiroViewController" customModule="gota" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2u-Rb-QxX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui a gotinha irá percorrer um logo caminho até uma estação de tratamento de água, é tipo um salão de beleza." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOB-hC-U9r">
+                                <rect key="frame" x="50" y="618" width="290" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="RRo-wz-Fjh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705879999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" name="Letras"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3V-qf-6j5">
+                                <rect key="frame" x="317" y="758" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" image="flecha 1">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <color key="titleShadowColor" name="Letras"/>
+                                </state>
+                                <connections>
+                                    <action selector="BueiroButton:" destination="50q-mn-Gfk" eventType="touchUpInside" id="hmF-hT-upE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GotaC" translatesAutoresizingMaskIntoConstraints="NO" id="2lN-vF-YNQ">
+                                <rect key="frame" x="100" y="151" width="190" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fAo-16-zcN"/>
+                        <color key="backgroundColor" name="Fundo"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jOB-hC-U9r" secondAttribute="bottom" constant="94" id="2ZG-iC-lxJ"/>
+                            <constraint firstItem="S3V-qf-6j5" firstAttribute="top" secondItem="jOB-hC-U9r" secondAttribute="bottom" constant="27" id="6C6-Im-Fbi"/>
+                            <constraint firstItem="jOB-hC-U9r" firstAttribute="leading" secondItem="fAo-16-zcN" secondAttribute="leading" constant="50" id="BVn-kJ-7ox"/>
+                            <constraint firstItem="fAo-16-zcN" firstAttribute="trailing" secondItem="jOB-hC-U9r" secondAttribute="trailing" constant="50" id="b2D-vB-Pmv"/>
+                            <constraint firstItem="S3V-qf-6j5" firstAttribute="trailing" secondItem="jOB-hC-U9r" secondAttribute="trailing" id="e3L-S5-Z9l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iRe-J2-OYd"/>
+                    <connections>
+                        <outlet property="BueiroImage" destination="2lN-vF-YNQ" id="pBk-cU-o4a"/>
+                        <outlet property="BueiroLabel" destination="jOB-hC-U9r" id="KFQ-1G-szX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hl-M4-YKS" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3780" y="2140"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KcZ-tT-zG5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jpR-5I-h0w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ica-kx-qnJ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vpf-gQ-Vvg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifz-Jn-Bhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436.92307692307691" y="86.729857819905206"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Group 14" width="167" height="278"/>
-        <image name="Group 16" width="167" height="278"/>
-        <image name="Group 17" width="167" height="278"/>
+        <image name="GotaA" width="167" height="278"/>
+        <image name="GotaC" width="167" height="278"/>
+        <image name="GotaV" width="167" height="278"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="flecha 1" width="19" height="19"/>
+        <namedColor name="Fundo">
+            <color red="0.96078431372549022" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Letras">
+            <color red="0.31764705882352939" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

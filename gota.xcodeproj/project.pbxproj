@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5D45E626AE19FD00F0A08A /* PerguntaBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D45E526AE19FD00F0A08A /* PerguntaBBViewController.swift */; };
+		9A5D45E826AE1A2800F0A08A /* BaldeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D45E726AE1A2800F0A08A /* BaldeViewController.swift */; };
+		9A5D45EA26AE1A3C00F0A08A /* BueiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D45E926AE1A3C00F0A08A /* BueiroViewController.swift */; };
 		9A6EA52826AB00F000BB1AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EA52726AB00F000BB1AF6 /* AppDelegate.swift */; };
 		9A6EA52A26AB00F000BB1AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EA52926AB00F000BB1AF6 /* SceneDelegate.swift */; };
 		9A6EA52C26AB00F000BB1AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EA52B26AB00F000BB1AF6 /* ViewController.swift */; };
@@ -16,9 +19,15 @@
 		9A6EA53C26AB03AD00BB1AF6 /* GotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EA53B26AB03AD00BB1AF6 /* GotaViewController.swift */; };
 		9A6EA53E26AB055300BB1AF6 /* RuralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EA53D26AB055300BB1AF6 /* RuralViewController.swift */; };
 		9A6EA54026AB056300BB1AF6 /* UrbanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EA53F26AB056300BB1AF6 /* UrbanaViewController.swift */; };
+		9AA0157226ADF18700E695CE /* PerguntaPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0157126ADF18700E695CE /* PerguntaPTViewController.swift */; };
+		9AF46E9B26AB8D2D00D8F81B /* PlantacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF46E9A26AB8D2D00D8F81B /* PlantacaoViewController.swift */; };
+		9AF46E9D26AB8D9D00D8F81B /* TanqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF46E9C26AB8D9D00D8F81B /* TanqueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A5D45E526AE19FD00F0A08A /* PerguntaBBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerguntaBBViewController.swift; sourceTree = "<group>"; };
+		9A5D45E726AE1A2800F0A08A /* BaldeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaldeViewController.swift; sourceTree = "<group>"; };
+		9A5D45E926AE1A3C00F0A08A /* BueiroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BueiroViewController.swift; sourceTree = "<group>"; };
 		9A6EA52426AB00F000BB1AF6 /* gota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6EA52726AB00F000BB1AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6EA52926AB00F000BB1AF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +39,9 @@
 		9A6EA53B26AB03AD00BB1AF6 /* GotaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotaViewController.swift; sourceTree = "<group>"; };
 		9A6EA53D26AB055300BB1AF6 /* RuralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuralViewController.swift; sourceTree = "<group>"; };
 		9A6EA53F26AB056300BB1AF6 /* UrbanaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanaViewController.swift; sourceTree = "<group>"; };
+		9AA0157126ADF18700E695CE /* PerguntaPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerguntaPTViewController.swift; sourceTree = "<group>"; };
+		9AF46E9A26AB8D2D00D8F81B /* PlantacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantacaoViewController.swift; sourceTree = "<group>"; };
+		9AF46E9C26AB8D9D00D8F81B /* TanqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanqueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,12 @@
 				9A6EA53B26AB03AD00BB1AF6 /* GotaViewController.swift */,
 				9A6EA53D26AB055300BB1AF6 /* RuralViewController.swift */,
 				9A6EA53F26AB056300BB1AF6 /* UrbanaViewController.swift */,
+				9AF46E9A26AB8D2D00D8F81B /* PlantacaoViewController.swift */,
+				9AF46E9C26AB8D9D00D8F81B /* TanqueViewController.swift */,
+				9AA0157126ADF18700E695CE /* PerguntaPTViewController.swift */,
+				9A5D45E526AE19FD00F0A08A /* PerguntaBBViewController.swift */,
+				9A5D45E726AE1A2800F0A08A /* BaldeViewController.swift */,
+				9A5D45E926AE1A3C00F0A08A /* BueiroViewController.swift */,
 			);
 			path = gota;
 			sourceTree = "<group>";
@@ -148,10 +166,16 @@
 			files = (
 				9A6EA53E26AB055300BB1AF6 /* RuralViewController.swift in Sources */,
 				9A6EA52C26AB00F000BB1AF6 /* ViewController.swift in Sources */,
+				9AF46E9D26AB8D9D00D8F81B /* TanqueViewController.swift in Sources */,
 				9A6EA53C26AB03AD00BB1AF6 /* GotaViewController.swift in Sources */,
+				9AF46E9B26AB8D2D00D8F81B /* PlantacaoViewController.swift in Sources */,
 				9A6EA54026AB056300BB1AF6 /* UrbanaViewController.swift in Sources */,
+				9A5D45EA26AE1A3C00F0A08A /* BueiroViewController.swift in Sources */,
+				9A5D45E626AE19FD00F0A08A /* PerguntaBBViewController.swift in Sources */,
 				9A6EA52826AB00F000BB1AF6 /* AppDelegate.swift in Sources */,
+				9A5D45E826AE1A2800F0A08A /* BaldeViewController.swift in Sources */,
 				9A6EA52A26AB00F000BB1AF6 /* SceneDelegate.swift in Sources */,
+				9AA0157226ADF18700E695CE /* PerguntaPTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  RuralViewController.swift
+//  PlantacaoViewController.swift
 //  gota
 //
 //  Created by Geovanna Kasemirinski da Silva on 23/07/21.
@@ -7,30 +7,19 @@
 
 import UIKit
 
-class RuralViewController: UIViewController {
+class PlantacaoViewController: UIViewController {
 
     var countButton = 0
     
-    @IBAction func RuralButton(_ sender: Any) {
-        if countButton == 0 {
-            RuralLAbel.text = "texto novo"
-            countButton += 1
-        }
-        else if countButton == 1{
-            RuralLAbel.text = "textinho"
-            GotaVerdeImage.image = UIImage(named: "GotaA")
-            //GotaImage.image = UIImage(named: "GotaA")
-            
+    @IBAction func ProximoButton(_ sender: Any) {
+        if countButton == 0{
+            PlantLabel.text = " Com a evapotranspiração, a gota chega rapidamente a nuvem, que depois de ser condensada e chover novamente."
             countButton += 1
         }
         
     }
     
-    @IBOutlet weak var GotaVerdeImage: UIImageView!
-    
-    @IBOutlet weak var RuralLAbel: UILabel!
-    
-   // @IBOutlet weak var GotaImage: UIImageView!
+    @IBOutlet weak var PlantLabel: UILabel!
     
     
     override func viewDidLoad() {
